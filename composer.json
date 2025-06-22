@@ -1,0 +1,16 @@
+{
+    "name": "jeet/php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jeetendra Singh",
+            "email": "chauhanjeetendra@gmail.com"
+        }
+    ],
+    "require": {}
+}
