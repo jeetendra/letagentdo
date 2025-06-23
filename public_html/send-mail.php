@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = getallheaders();
     $authKey = $headers["X-API-KEY"] ?? $headers["x-api-key"] ?? "";
 
-    if ($authKey !== emailApiKey) {
+    if ($authKey !== $emailApiKey) {
         http_response_code(401);
         echo json_encode(["status" => "fail", "error" => "Unauthorized"]);
         exit;
